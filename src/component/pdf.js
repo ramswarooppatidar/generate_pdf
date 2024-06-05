@@ -18,7 +18,6 @@ export const PDFForm = forwardRef((props, ref) => {
             <p><strong>Occupation :</strong> {formData.occupation}</p>
             <p><strong>Age :</strong> {formData.age}</p>
             <p><strong>Height :</strong> {formData.height}</p>
-            <br></br>
             <p><strong>Father Name:</strong> {formData.fatherName}</p>
             <p><strong>Mother Name:</strong> {formData.motherName}</p>
             <p><strong>Father Occupation:</strong> {formData.fatherOccupation}</p>
@@ -27,7 +26,6 @@ export const PDFForm = forwardRef((props, ref) => {
             <p><strong>Nana jee Name:</strong> {formData.nanaName}</p>
             <p><strong>Mama Name:</strong> {formData.mamaName}</p>
             <p><strong>Mama Address:</strong> {formData.mamaAddress}</p>
-            <br></br>
             <br></br>
             <hr></hr>
            
