@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Form } from "./component/form";
+import { CustomFormContext } from "./contextApi";
+import { createHashRouter,RouterProvider,createBrowserRouter} from 'react-router-dom';
+import { PDFForm } from "./component/pdf";
 function App() {
+  const router = createHashRouter([{
+    
+    path : "/" ,
+    children : [
+       {index : true, element : <Form/>},
+      {path : "pdf", element : <PDFForm/>}    
+    ]  
+  }
+    
+  ])
+//  const router = createBrowserRouter([
+//   {
+//     path : "/" ,
+//     children : [
+//        {index : true, element : <Form/>},
+//       {path : "/pdf", element : <PDFForm/>}    
+//     ]  
+//   }
+// ]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <div>
+   <CustomFormContext>
+      {/* <Form /> */}
+      <RouterProvider router={router} >
+        
+        </RouterProvider>
+   </CustomFormContext>
+     
+   </div>
+  
+   </>
   );
 }
 

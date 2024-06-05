@@ -1,0 +1,26 @@
+p{
+   font-size: 26px; 
+   color: rgb(58, 57, 57);
+   margin-left: 20px;
+}
+h1{
+    margin-left: 5px;
+    color:black;
+    padding-top:10px;
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    margin-right: 10px;
+}
+hr {
+    border: none; /* Removes the default border */
+    height: 2px; /* Sets the height of the hr */
+    background-color: rgb(83, 83, 84); /* Sets the background color */
+    margin: 1px; /* Adds vertical spacing */
+    padding-bottom: 10px;
+}
+.date{
+    margin-left:100px;
+}
