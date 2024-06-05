@@ -46,6 +46,12 @@ export function Form(){
                 const pdf = new jsPDF('p', 'mm', 'a4');
                 const pdfWidth = pdf.internal.pageSize.getWidth();
                 const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+
+                 // Define margins
+                const margin = 30; // 10 mm margin
+                const marginWidth = pdfWidth - 2 * margin;
+                const marginHeight = pdfHeight / 2 - margin; // Adjust height for half A4 page size with margins
+
                 pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
                 pdf.save("download.pdf");
                 setIsLoading(false);
