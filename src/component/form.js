@@ -79,7 +79,7 @@ export function Form(){
                 <input id="fatherName" name="fatherName" type="text" placeholder="Mr. Rameshwar Patidar" onChange={handleChange} value={formData.fatherName} />
 
                 <label htmlFor="motherName" className="form-label">Mother name</label>
-                <input id="motherName" name="motherName" type="text" placeholder="Miss Krishna Patidar" onChange={handleChange} value={formData.motherName} />
+                <input id="motherName" name="motherName" type="text" placeholder="Mrs. Krishna Patidar" onChange={handleChange} value={formData.motherName} />
 
                 <label htmlFor="address" className="form-label">Your address</label>
                 <textarea id="address" name="address" rows="5" cols="40" placeholder="village Dupada, district Shajapur..." onChange={handleChange} value={formData.address} />
@@ -90,7 +90,7 @@ export function Form(){
                 <input id="nanaName" name="nanaName" type="text" placeholder="Mr. Radheshyam Choudary" onChange={handleChange} value={formData.nanaName} />
 
                 <label htmlFor="mamaName" className="form-label">Mama Name</label>
-                <input id="mamaName" name="mamaName" type="text" placeholder="Miss. Sanwtra Devi" onChange={handleChange} value={formData.mamaName} />
+                <input id="mamaName" name="mamaName" type="text" placeholder="Mr. Makhan singh.." onChange={handleChange} value={formData.mamaName} />
 
                 <label htmlFor="mamaAddress" className="form-label">Mama address</label>
                 <textarea id="mamaAddress" name="mamaAddress" rows="5" cols="40" placeholder="Village Lahori, District Shajapur" onChange={handleChange} value={formData.mamaAddress} />
