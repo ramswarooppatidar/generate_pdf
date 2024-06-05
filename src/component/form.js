@@ -25,7 +25,7 @@ export function Form(){
                 const pdfHeight = (canvas.height * pdfWidth) / canvas.width*2;
     
                 // Ensure the canvas height does not exceed the half-A4 page height
-                const adjustedPdfHeight = Math.min(pdfHeight, 168.5/1);
+                const adjustedPdfHeight = Math.min(pdfHeight, 148.5);
     
                 pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, adjustedPdfHeight);
                 pdf.save("download.pdf");

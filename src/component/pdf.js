@@ -28,6 +28,7 @@ export const PDFForm = forwardRef((props, ref) => {
             <p><strong>Mama Name:</strong> {formData.mamaName}</p>
             <p><strong>Mama Address:</strong> {formData.mamaAddress}</p>
             <br></br>
+            <br></br>
             <hr></hr>
            
             
