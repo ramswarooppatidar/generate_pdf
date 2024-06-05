@@ -20,9 +20,9 @@ export function Form(){
             html2canvas(input, { scale: 2 }).then(canvas => {
                 const imgData = canvas.toDataURL('image/png');
                 // Create a new jsPDF object with custom page size
-                const pdf = new jsPDF('p', 'mm', 'a4');
+                const pdf = new jsPDF('p', 'mm',  [210, 148.5]);
                 const pdfWidth = pdf.internal.pageSize.getWidth();
-                const pdfHeight = (canvas.height * pdfWidth) / canvas.width*2;
+                const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
     
                 // Ensure the canvas height does not exceed the half-A4 page height
                 const adjustedPdfHeight = Math.min(pdfHeight, 148.5);
