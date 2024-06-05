@@ -12,22 +12,41 @@ export function Form(){
      const [isLoading, setIsLoading] = useState(false);
      const{formData, setFormData, handleChange} = useValue();
 
-    const generatePDF = () => {
+    // const generatePDF = () => {
        
+    //     const input = pdfRef.current;
+    //     if (input) {
+    //         setIsLoading(true);
+    //         html2canvas(input, { scale: 2 }).then(canvas => {
+    //             const imgData = canvas.toDataURL('image/png');
+    //             // Create a new jsPDF object with custom page size
+    //             const pdf = new jsPDF('p', 'mm',  [210, 148.5]);
+    //             const pdfWidth = pdf.internal.pageSize.getWidth();
+    //             const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+    
+    //             // Ensure the canvas height does not exceed the half-A4 page height
+    //             const adjustedPdfHeight = Math.min(pdfHeight, 148.5);
+    
+    //             pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, adjustedPdfHeight);
+    //             pdf.save("download.pdf");
+    //             setIsLoading(false);
+    //         }).catch(err => {
+    //             console.error("Error generating PDF", err);
+    //         });
+    //     } else {
+    //         console.error("PDFRef is not defined");
+    //     }
+    // };
+    const generatePDF = () => {
         const input = pdfRef.current;
         if (input) {
             setIsLoading(true);
             html2canvas(input, { scale: 2 }).then(canvas => {
                 const imgData = canvas.toDataURL('image/png');
-                // Create a new jsPDF object with custom page size
-                const pdf = new jsPDF('p', 'mm',  [210, 148.5]);
+                const pdf = new jsPDF('p', 'mm', 'a4');
                 const pdfWidth = pdf.internal.pageSize.getWidth();
                 const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
-    
-                // Ensure the canvas height does not exceed the half-A4 page height
-                const adjustedPdfHeight = Math.min(pdfHeight, 148.5);
-    
-                pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, adjustedPdfHeight);
+                pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
                 pdf.save("download.pdf");
                 setIsLoading(false);
             }).catch(err => {
