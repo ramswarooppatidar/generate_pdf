@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/generate_pdf/static/css/main.641904ee.css",
-    "main.js": "/generate_pdf/static/js/main.10a3a5ba.js",
+    "main.css": "/generate_pdf/static/css/main.dc74777e.css",
+    "main.js": "/generate_pdf/static/js/main.f6dd431b.js",
     "static/js/213.195af61d.chunk.js": "/generate_pdf/static/js/213.195af61d.chunk.js",
     "static/js/732.8b626db9.chunk.js": "/generate_pdf/static/js/732.8b626db9.chunk.js",
     "index.html": "/generate_pdf/index.html",
-    "main.641904ee.css.map": "/generate_pdf/static/css/main.641904ee.css.map",
-    "main.10a3a5ba.js.map": "/generate_pdf/static/js/main.10a3a5ba.js.map",
+    "main.dc74777e.css.map": "/generate_pdf/static/css/main.dc74777e.css.map",
+    "main.f6dd431b.js.map": "/generate_pdf/static/js/main.f6dd431b.js.map",
     "213.195af61d.chunk.js.map": "/generate_pdf/static/js/213.195af61d.chunk.js.map",
     "732.8b626db9.chunk.js.map": "/generate_pdf/static/js/732.8b626db9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.641904ee.css",
-    "static/js/main.10a3a5ba.js"
+    "static/css/main.dc74777e.css",
+    "static/js/main.f6dd431b.js"
   ]
 }
