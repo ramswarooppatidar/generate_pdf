@@ -73,7 +73,8 @@ export function Form(){
                 <input id="name" name="name" type="text" placeholder="your name" onChange={handleChange} value={formData.name} />
 
                 <label htmlFor="dob" className="form-label">Date of birth</label>
-                <input id="dob" name="dob" type="datetime-local" placeholder="date of birthday" onChange={handleChange} value={formData.dob} />
+                {/* <input id="dob" name="dob" type="datetime-local" placeholder="date of birthday" onChange={handleChange} value={formData.dob} /> */}
+                <input id="dob" name="dob" type="date" placeholder="date of birthday" onChange={handleChange} value={formData.dob} />
 
                 <label htmlFor="fatherName" className="form-label">Father Name</label>
                 <input id="fatherName" name="fatherName" type="text" placeholder="Mr. Rameshwar Patidar" onChange={handleChange} value={formData.fatherName} />
@@ -82,7 +83,7 @@ export function Form(){
                 <input id="motherName" name="motherName" type="text" placeholder="Mrs. Krishna Patidar" onChange={handleChange} value={formData.motherName} />
 
                 <label htmlFor="address" className="form-label">Your address</label>
-                <textarea id="address" name="address" rows="5" cols="40" placeholder="village Dupada, district Shajapur..." onChange={handleChange} value={formData.address} />
+                <textarea id="address" name="address" rows="5" cols="25" placeholder="village Dupada, district Shajapur..." onChange={handleChange} value={formData.address} />
 
                 <hr />
 
@@ -93,23 +94,23 @@ export function Form(){
                 <input id="mamaName" name="mamaName" type="text" placeholder="Mr. Makhan singh.." onChange={handleChange} value={formData.mamaName} />
 
                 <label htmlFor="mamaAddress" className="form-label">Mama address</label>
-                <textarea id="mamaAddress" name="mamaAddress" rows="5" cols="40" placeholder="Village Lahori, District Shajapur" onChange={handleChange} value={formData.mamaAddress} />
+                <textarea id="mamaAddress" name="mamaAddress" rows="5" cols="25" placeholder="Village Lahori, District Shajapur" onChange={handleChange} value={formData.mamaAddress} />
 
                 <hr />
 
                 <label htmlFor="qualification" className="form-label">Qualification</label>
-                <textarea id="qualification" name="qualification" rows="5" cols="40" placeholder="MTech-2018 in VLSI design&nbsp;BE-2018 in Electronics" onChange={handleChange} value={formData.qualification} />
+                <textarea id="qualification" name="qualification" rows="5" cols="25" placeholder="MTech-2018 in VLSI design&nbsp;BE-2018 in Electronics" onChange={handleChange} value={formData.qualification} />
 
                 <label htmlFor="occupation" className="form-label">Occupation</label>
-                <textarea id="occupation" name="occupation" rows="5" cols="40" placeholder="Software Engineer, Location Mumbai.." onChange={handleChange} value={formData.occupation} />
+                <textarea id="occupation" name="occupation" rows="5" cols="25" placeholder="Software Engineer, Location Mumbai.." onChange={handleChange} value={formData.occupation} />
 
                 <label htmlFor="fatherOccupation" className="form-label">Father Occupation</label>
-                <textarea id="fatherOccupation" name="fatherOccupation" rows="5" cols="40" placeholder="Agriculture, pradhan" onChange={handleChange} value={formData.fatherOccupation} />
+                <textarea id="fatherOccupation" name="fatherOccupation" rows="5" cols="25" placeholder="Agriculture, pradhan" onChange={handleChange} value={formData.fatherOccupation} />
 
                 <hr />
 
-                <label htmlFor="age" className="form-label">Your age</label>
-                <input id="age" name="age" type="text" placeholder="24,7" onChange={handleChange} value={formData.age} />
+                {/* <label htmlFor="age" className="form-label">Your age</label>
+                <input id="age" name="age" type="text" placeholder="24,7" onChange={handleChange} value={formData.age} /> */}
 
                 <label htmlFor="height" className="form-label">Your height in Inch</label>
                 <input id="height" name="height" type="text" placeholder="5.2" onChange={handleChange} value={formData.height} />

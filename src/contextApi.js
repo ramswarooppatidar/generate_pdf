@@ -24,9 +24,18 @@ export function CustomFormContext({children}){
     });
     const handleChange = (e) => {
         const { name, value } = e.target;
+            setFormData({ ...formData, [name]: value });
        
-        setFormData({ ...formData, [name]: value });
     };
+    // const handleChange = (e) => {
+    //     const { name, value } = e.target;
+    //     if(name='dob'){
+    //         setFormData({ ...formData, [name]: value });
+    //         let ageCalculate = new Date() - value;
+    //         setFormData({...formData, age :ageCalculate })
+    //     }
+       
+    // };
 
     return(
         <formContext.Provider value={{formData,
